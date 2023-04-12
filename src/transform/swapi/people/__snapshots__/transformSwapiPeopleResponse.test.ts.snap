@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`transformSwapiPeopleResponse converts an axios response appropriately 1`] = `
+Object {
+  "birthYear": "52BBY",
+  "created": "2014-12-10T15:52:14.024000Z",
+  "edited": "2014-12-20T21:17:50.317000Z",
+  "eyeColor": "blue",
+  "films": Array [
+    "https://swapi.dev/api/films/1/",
+    "https://swapi.dev/api/films/5/",
+    "https://swapi.dev/api/films/6/",
+  ],
+  "gender": "male",
+  "hairColor": "brown, grey",
+  "height": "178",
+  "homeworld": "https://swapi.dev/api/planets/1/",
+  "mass": "120",
+  "name": "Owen Lars",
+  "skinColor": "light",
+  "species": Array [],
+  "starships": Array [],
+  "url": "https://swapi.dev/api/people/6/",
+  "vehicles": Array [],
+}
+`;

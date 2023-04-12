@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getFromSWAPI gets a request from SWAPI 1`] = `
+Array [
+  "https://swapi.dev/api/people/6/",
+]
+`;

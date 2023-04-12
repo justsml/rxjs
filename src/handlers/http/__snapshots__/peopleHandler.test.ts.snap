@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` returns a response 1`] = `
+Object {
+  "body": "[]",
+  "statusCode": 200,
+}
+`;

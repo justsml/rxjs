@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "strict": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "types": ["node", "jest"],
+    "paths": {
+      "@rx-example/*": ["*"]
+    },
+    "resolveJsonModule": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "lib": ["ES2019"],
+    "module": "commonjs",
+    "target": "ES2019",
+    "declarationMap": true,
+    "noImplicitAny": false,
+    "outDir": "dist"
+  },
+  "include": ["./src/**/*", "serverless.ts"],
+  "exclude": ["node_modules", "dist", ".eslintrc.js"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
