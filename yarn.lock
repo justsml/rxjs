@@ -6298,7 +6298,7 @@ node-fetch@^2.6.1, node-fetch@^2.6.7, node-fetch@^2.6.8, node-fetch@^2.6.9:
   dependencies:
     whatwg-url "^5.0.0"
 
-node-fetch@^3.3.0, node-fetch@^3.3.1:
+node-fetch@^3.3.0:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-3.3.1.tgz#b3eea7b54b3a48020e46f4f88b9c5a7430d20b2e"
   integrity sha512-cRVc/kyto/7E5shrWca1Wsea4y6tL9iYJE5FBCius3JQfb/4P4I295PfhgbJQBLTx6lATE4z+wK0rPM4VS2uow==
@@ -7064,13 +7064,6 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-rxjs-http-client@^7.0.7:
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/rxjs-http-client/-/rxjs-http-client-7.0.7.tgz#3bc784363da82dfef81d595884fe41e2783ef0c1"
-  integrity sha512-wBLBW1qjkufP3xQfFbpThY1YUdjtKdaYxeM50S7gGMIPNFuFI+pQYa7HCwJyyI46dKEOofVDCFOSXx6PSv63kA==
-  dependencies:
-    rxjs "^7.5.6"
-
 rxjs@^6.6.7:
   version "6.6.7"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
@@ -7078,7 +7071,7 @@ rxjs@^6.6.7:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^7.5.5, rxjs@^7.5.6, rxjs@^7.8.0:
+rxjs@^7.5.5, rxjs@^7.8.0:
   version "7.8.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.8.0.tgz#90a938862a82888ff4c7359811a595e14e1e09a4"
   integrity sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==

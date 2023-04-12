@@ -1,29 +1,18 @@
-import { GetHttpRequestFunction } from '@slicing/types';
-import { Observable } from 'rxjs';
-import { HttpResponse, RxJSHttpClient } from 'rxjs-http-client';
-import { http } from './http';
-import fetch, {
-  Headers,
-  Request,
-  Response,
-} from 'node-fetch'
+import { get as getFP } from 'lodash/fp';
+import { map, Observable } from 'rxjs';
 
-if (!globalThis.fetch) {
-  globalThis.fetch = fetch
-  globalThis.Headers = Headers
-  globalThis.Request = Request
-  globalThis.Response = Response
-}
+import { HttpRequestGetFunction, httpRequestGet } from '../http';
 
-export interface Getter {
-  (path: string): (index: number) => Observable<HttpResponse>;
+export interface Getter<T extends any> {
+  (path: string, getFn?: HttpRequestGetFunction<T>): (
+    index: number,
+  ) => Observable<T>;
 }
 
 export const getFromSWAPI =
-  (
-    baseUrl: string = 'https://swapi.dev/api/',
-    getFn: GetHttpRequestFunction = http.get,
-  ): Getter =>
-    (path) =>
-      (index) =>
-        new RxJSHttpClient().get(`${baseUrl}${path}/${index}/`);
+  <T>(baseUrl: string = 'https://swapi.dev/api/'): Getter<T> =>
+  (path, httpRequestGetFN = httpRequestGet) =>
+  (index) =>
+    httpRequestGetFN(`${baseUrl}${path}/${index}/`).pipe(
+      map(getFP('data')),
+    ) as Observable<T>;

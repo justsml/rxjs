@@ -1,8 +1,8 @@
 import { APIGatewayProxyHandler } from 'aws-lambda';
 import { StatusCodes } from 'http-status-codes';
 
-import { GetNPeople, getNPeople } from '@slicing/operation';
-import { getPathParamFromAPIGatewayProxyEvent } from '@slicing/utilities/aws';
+import { GetNPeople, getNPeople } from '@rx-example/operation';
+import { getPathParamFromAPIGatewayProxyEvent } from '@rx-example/utilities/aws';
 
 export const handler =
   (getNPeopleFn: GetNPeople = getNPeople): APIGatewayProxyHandler =>

@@ -7,7 +7,7 @@ import { get } from 'lodash';
 
 import {
   getStageNameFromEnv,
-} from '@slicing/utilities/env';
+} from '@rx-example/utilities/env';
 
 const pathToConfig = path.resolve(__dirname, '.env')
 dotenv.config({ path: pathToConfig });

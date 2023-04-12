@@ -1,7 +1,7 @@
 import { flow, range } from 'lodash';
 import { map as mapFP } from 'lodash/fp';
 
-import { People } from '@slicing/types';
+import { People } from '@rx-example/types';
 
 import { GetPeople, getPeople } from './getPeople';
 

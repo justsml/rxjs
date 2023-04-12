@@ -1,4 +1,4 @@
-import { LarsOwen } from '@slicing/__fixtures__/swapi/people';
+import { LarsOwen } from '@rx-example/__fixtures__/swapi/people';
 import { getNPeople } from './getNPeople';
 
 describe(getNPeople, () => {

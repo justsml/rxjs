@@ -1,4 +1,4 @@
-import { apiGatewayEvent } from '@slicing/__fixtures__/aws';
+import { apiGatewayEvent } from '@rx-example/__fixtures__/aws';
 import { parseInt } from 'lodash';
 import { getPathParamFromAPIGatewayProxyEvent } from './getPathParamFromAPIGatewayProxyEvent';
 
