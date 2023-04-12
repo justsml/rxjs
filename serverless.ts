@@ -82,13 +82,13 @@ const buildConfiguration = async () => {
     },
     functions: {
       people: {
-        handler: 'src/handlers/http/index.peopleHandler',
+        handler: 'src/handlers/http/index.handler',
         events: [
           {
             http: {
               cors,
               method: 'get',
-              path: 'people/{n}',
+              path: 'example',
             },
           },
         ],

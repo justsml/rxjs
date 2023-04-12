@@ -1,3 +1,5 @@
+import { People } from './People';
+
 export interface Starship {
   name: string;
   model: string;
@@ -6,7 +8,7 @@ export interface Starship {
   length: string;
   maxAtmospheringSpeed: string;
   crew: string;
-  passengers: string;
+  passengers: string | People[];
   cargoCapacity: string;
   consumables: string;
   hyperdriveRating: string;
